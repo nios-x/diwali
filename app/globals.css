@@ -1,21 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    src: url("/minecraft.ttf");
+    font-family: mine;
 }
+*{
+    font-family: mine;
+    
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.bgofbody{
+    background: linear-gradient(145deg, rgb(255, 42, 42), rgb(126, 126, 255));
 }
